@@ -32,7 +32,7 @@ summary {
     display: block
 }
 
-audio,
+/*audio,
 canvas,
 progress,
 video {
@@ -43,16 +43,16 @@ video {
 audio:not([controls]) {
     display: none;
     height: 0
-}
+}*/
 
 [hidden],
 template {
     display: none
 }
 
-a {
+/*a {
     background-color: transparent
-}
+}*/
 
 a:active,
 a:hover {
@@ -5218,9 +5218,9 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-right: 15px;
     margin-bottom: 8px;
     background-color: transparent;
-    background-image: none;
+   /*background-image: none;*/
     border: 1px solid transparent;
-    border-radius: 4px
+    /*border-radius: 4px;*/
 }
 
 .navbar-toggle:focus {
@@ -7682,10 +7682,10 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    background-color: #0009;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .carousel-indicators .active {
