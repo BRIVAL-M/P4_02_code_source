@@ -1,3 +1,44 @@
+.adjust {
+   
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 15px;
+}
+.adjust__title {
+    margin: inherit;
+    margin-right: 6px;
+    font-weight: bold;
+}
+.adjust__txt {
+    font-size: 22px;
+    line-height: 1.4em;
+    color: #000000;
+    font-weight: bold;
+    
+}
+.adjust2 {
+   
+    text-align: center;
+   
+}
+.adjust2__title {
+    font-size: 20px;
+    margin: inherit;
+    margin-right: 6px;
+    font-weight: bold;
+}
+.adjust2__txt {
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 0px;
+    
+}
+
+
 
 body {
     margin : 0;
@@ -227,11 +268,11 @@ body {
     text-transform : uppercase;
     font-weight : 700;
     }
-    .med-width-whitespace {
+    /*.med-width-whitespace {
     max-width : 800px;
     margin : auto auto auto auto;
     box-shadow : 0 0 0 #000000;
-    }
+    }*/
     .icons {
     margin-bottom : 14px;
     margin-top : 24px;
