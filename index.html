@@ -13,6 +13,7 @@
 	<!--Add-->
 	<meta name="googlebot" content="index, follow" />
 	<!--Add-->
+	<link rel="canonical" href="https://brival-m.github.io/P4_02_code_source/"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
@@ -35,8 +36,9 @@
 	<script src="./js/jquery-2.1.0.js"></script>
 	<script src="./js/bootstrap.js"></script>
 	<script src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	<!--<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js"></script>-->
+	
 	<!--JS à minifier et voir ce qui ne sert a rien-->
 	<title>La chouette agence - Entreprise webdesign Lyon</title>
 </head>
@@ -74,7 +76,6 @@
 			</div>
 		</header>
 		<!-- bloc-0 END -->
-
 		<!-- bloc-1-presentation -->
 		<section class="bloc bgc-dark-slate-blue bg-banniere bg-t-edge bloc-bg-texture texture-paper b-parallax"
 			id="bloc-1-hero">
@@ -96,20 +97,22 @@
 			</div>
 		</section>
 		<!-- bloc-1-presentation END -->
-
 		<!-- bloc-2-services -->
 		<section class="bloc bgc-white" id="bloc-2-services">
 			<!--l-bloc -->
 			<div class="container bloc-md">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-					<!--<h2>La chouette agence est une agence de web design qui aide
+				<h2>La chouette agence est une agence de web design qui aide
 							<br />les entreprises à devenir attractives et visibles sur
 							internet
-						</h2>--><div class="adjust">
+						</h2>
+							<!--<div class="adjust">
 							<h2 class="adjust__title">La chouette agence est une agence de web design</h2>
-						<p class="adjust__txt">qui aide</p></div><div class=" adjust adjust__txt"><p class="adjust__txt"></p>
-							les entreprises à devenir attractives et visibles sur internet</p></div>
+						<p class="adjust__txt">qui aide</p></div><div class="adjust adjust__txt">
+							<p class="adjust__txt">
+							les entreprises à devenir attractives et visibles sur internet</p></div>-->
+							
 						
 					</div>
 				</div>
@@ -150,7 +153,7 @@
 				</div>
 				<div class="row voffset-lg voffset">
 					<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-						<blockquote cite="https://www.info-lyon-du-net.fr">
+						<blockquote>
 							"La chouette agence est une excellente agence web ! Les<br />
 							Web Designers ont réussi à capturer l'essence de notre<br />
 							entreprise et à l'intégrer à notre site. Cela nous a aidés à<br />
@@ -162,21 +165,17 @@
 			</div>
 		</section>
 		<!-- bloc-2-services END -->
-
 		<!-- bloc-3-what-i-do -->
-		<section class="bloc tc-white bgc-atomic-tangerine bg-presentation bloc-bg-texture texture-paper b-parallax"
+		<article class="bloc tc-white bgc-atomic-tangerine bg-presentation bloc-bg-texture texture-paper b-parallax"
 			id="bloc-3-what-i-do">
 			<div class="container bloc-lg">
 				<div class="row tight-width-whitespace black-background">
-					<div class="col-sm-12"><!--<h2 class="mg-md text-center tc-white">
+					<div class="col-sm-12"><p class="mg-md text-center tc-white">
 						Nous souhaitons aider les entreprises de la région Lyonnaise à
 						se développer et à connaître le succès. Nous travaillons pour
 						aider les entreprises locales à attirer de nouveaux clients .
-					</h2>-->
-					<div class="adjust2  ">
-						<h2 class="adjust2__title tc-white">Nous souhaitons aider les entreprises de la région</h2>
-					<p class="adjust2__txt tc-white">Lyonnaise à se développer et à connaître le</p></div><div class=" adjust2 adjust2__txt tc-white"><p class="adjust2__txt tc-white"></p>
-						succès. Nous travaillons pour aider les <br/>  locales à attirer de nouveaux clients .</p></div>
+					</p>
+					
 						
 						<p class="text-center white">
 							Nous aimons collaborer avec des entrepreneurs créatifs et des
@@ -190,9 +189,8 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</article>
 		<!-- bloc-3-what-i-do END -->
-
 		<!-- bloc-4-portfolio -->
 		<section class="bloc bgc-white bg-lines-h2-bg bg-repeat" id="bloc-4-portfolio">
 			<!--l-bloc -->
@@ -200,18 +198,18 @@
 				<div class="row">
 					<div class="col-sm-12 text-center">
 						<h2>
-							Nous travaillons avec beacoup de clients,<br />voici nos
+							Nous travaillons avec beaucoup de clients,<br />voici nos
 							réalisations
 						</h2>
 					</div>
 				</div>
-				<article class="row tight-width-whitespace portfolio-row"><!--Ca fait 2 articles 1 article 2 images... ça passe mais bon étrange je trouve lol-->
+				<article class="row tight-width-whitespace portfolio-row">                               <!--Ca fait 2 articles 1 article 2 images... ça passe mais bon étrange je trouve lol-->
 					
-					<div class="col-sm-6"><!--j'aimerai les mettre dans une figure ! -->
-						<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1"
+					<div class="col-sm-6">                                                               <!--j'aimerai les mettre dans une figure ! -->
+						<a href="#" data-lightbox="img/site_web_journal.jpg" data-gallery-id="gallery-1"
 							data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img
-								src="img/1.jpg"
-								alt="paris web design logo agence web meilleure agence et refonte site web journal"
+								src="img/site_web_journal.jpg"
+								alt="image représentant des journaux, issue d'un site web pour un journal de Lyon, créé par la chouette agence"
 								class="img-responsive portfolio-thumb" /></a>
 						<h3 class="mg-md text-center">
 							Refonte d'un site web pour un journal local
@@ -222,10 +220,10 @@
 						</p>
 					</div>
 					<div class="col-sm-6"><!--j'aimerai les mettre dans une figure ! -->
-						<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1"
+						<a href="#" data-lightbox="img/site_web_photographes.jpg" data-gallery-id="gallery-1"
 							data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img
-								src="img/2.jpg" class="img-responsive portfolio-thumb"
-								alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" /></a>
+								src="img/site_web_photographes.jpg" class="img-responsive portfolio-thumb"
+								alt="une jeune femme brune prenant une photo, issue d'un site web pour photographes, créé par la chouette agence" /></a><!--MODIFIER LES ALT-->
 						<h3 class="mg-md text-center">
 							Création d'un site web pour photographes
 						</h3>
@@ -237,10 +235,10 @@
 				</article>
 				<article class="row tight-width-whitespace portfolio-row">
 					<div class="col-sm-6"><!--j'aimerai les mettre dans une figure ! -->
-						<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1"
+						<a href="#" data-lightbox="img/site_web_voyageur.jpg" data-gallery-id="gallery-1"
 							data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img
-								src="img/3.bmp" class="img-responsive portfolio-thumb"
-								alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur" /></a>
+								src="img/site_web_voyageur.jpg" class="img-responsive portfolio-thumb"
+								alt="du matériel photographique, issue d'un site de voyageur, créé par la chouette agence" /></a>
 						<h3 class="mg-md text-center">
 							Création d'un site internet pour un voyageur
 						</h3>
@@ -250,10 +248,10 @@
 						</p>
 					</div>
 					<div class="col-sm-6"><!--j'aimerai les mettre dans une figure ! -->
-						<a href="#" data-lightbox="img/4.bmp" data-gallery-id="gallery-1"
+						<a href="#" data-lightbox="img/site_web_agence_mariage.jpg" data-gallery-id="gallery-1"
 							data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img
-								src="img/4.bmp" class="img-responsive portfolio-thumb"
-								alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" /></a>
+								src="img/site_web_agence_mariage.jpg" class="img-responsive portfolio-thumb"
+								alt="deux personnes faisant des recherches pour un mariage, issue d'un site d'agence de mariage, créé par la chouette agence" /></a>
 						<h3 class="mg-md text-center">
 							Conception d'un site pour une agence de mariage
 						</h3>
@@ -267,24 +265,22 @@
 			</div>
 		</section>
 		<!-- bloc-4-portfolio END -->
-
 		<!-- bloc-5-cta -->
 		<section class="bloc bgc-dark-slate-blue bg-banniere bloc-bg-texture texture-paper" id="bloc-5-cta">
 			<div class="container bloc-lg">
 				<div class="row">
-					<h2 class="mg-md text-center tc-white">
+					<h2 class="mg-md text-center tc-white position">
 						Prêt pour redonner vie à votre projet ?<br />Contactez notre
 						équipe !
 					</h2>
 					<div class="col-sm-12 text-center">
-						<a href="page2.html"
+						<a href="la-chouette-agence-contact.html"
 							class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- bloc-5-cta END -->
-
 		<!-- Footer - bloc-8 -->
 		<footer class="bloc bgc-atomic-tangerine" id="bloc-8">
 			<div class="container bloc-sm">
@@ -296,23 +292,23 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									<a class="social text-center--icons" href="https://twitter.com/?lang=fr"><span class="fa fa-twitter icon-md"></span>Twitter</a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									<a class="social text-center--icons" href="https://fr-fr.facebook.com/"><span class="fa fa-facebook icon-md"></span>Facebook</a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+									<a class="social text-center--icons" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span>Dribbble</a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span
-											class="fa fa-instagram icon-md"></span></a>
+									<a class="text-center--icons social" href="https://www.instagram.com/?hl=fr"><span
+											class="fa fa-instagram icon-md"></span>instagram</a>
 								</div>
 							</div>
 						</div>
@@ -320,7 +316,6 @@
 				</div>
 			</div>
 		</footer>
-
 		<!-- Footer - bloc-8 END -->
 	</div>
 	<!-- Principal conteneur END -->
