@@ -46,7 +46,17 @@ textarea
     font-size: 1em;
     
 }
-
+.containerAdjust {
+    display: flex;
+    justify-content: center;
+}
+.headerLinks {
+    font-size: large;
+    font-weight: bold;
+}
+.headerLinks:hover{
+    color: #F3976C;
+}
 
 
 body {
@@ -113,7 +123,7 @@ body {
     background-size : 280px 280px;
     }
     .b-parallax {
-    background-attachment : fixed;
+    background-attachment : fixed !important;
     }
     .voffset {
     margin-top : 30px;
@@ -306,8 +316,8 @@ body {
     color : #FFF;
     font-size : 30px;
     position : absolute;
-    top : 20px;
-    right : 20px;
+    top : 30px;
+    right : 25px;
     z-index : 1;
     background : rgb(0, 0, 0, 0.5);
     border : none;
@@ -337,7 +347,56 @@ body {
     /*background-color : rgb(165, 147, 99, 0.7);*/
     background-color: rgb(0 0 0 / 58%);
     padding : 40px 40px 40px 40px;
-    }
+    width: 60%;/*------------------------------------------------------------------------adding by me*/
+    border-radius: 25px;
+    animation: CHOUETTE 2s ease  1 normal forwards;
+  }
+   
+    @keyframes CHOUETTE {
+        0% {
+          animation-timing-function: ease-in;
+          opacity: 1;
+          transform: translateY(-45px);
+        }
+      
+        24% {
+          opacity: 1;
+        }
+      
+        40% {
+          animation-timing-function: ease-in;
+          transform: translateY(-24px);
+        }
+      
+        65% {
+          animation-timing-function: ease-in;
+          transform: translateY(-12px);
+        }
+      
+        82% {
+          animation-timing-function: ease-in;
+          transform: translateY(-6px);
+        }
+      
+        93% {
+          animation-timing-function: ease-in;
+          transform: translateY(-4px);
+        }
+      
+        25%,
+        55%,
+        75%,
+        87% {
+          animation-timing-function: ease-out;
+          transform: translateY(0px);
+        }
+      
+        100% {
+          animation-timing-function: ease-out;
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
     .bold-link {
     font-weight : 900;
     text-decoration : underline !important ;
@@ -379,7 +438,7 @@ body {
     background-image : url("img/la-chouette-agence-banniere.jpg");
     }
     .bg-presentation {
-    background-image : url("img/image-de-presentation.bmp");
+    background-image : url("img/image-de-presentation.jpg");
     }
     footer {
         background : #F3976C !important ;
@@ -390,7 +449,7 @@ body {
     padding-right : 20px;
     }
     }
-    @media (max-width: 992px) and (min-width: 768px) {
+    /*@media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
     max-width : 80%;
     }
@@ -416,7 +475,7 @@ body {
     overflow-x : hidden;
     position : relative;
     }
-    }
+    
     @media (max-width: 767px) {
     .page-container {
     overflow-x : hidden;
@@ -489,6 +548,12 @@ body {
         }
         h2 {
             font-size: x-large;
+        }
+        .black-background {
+            width: 90%;
+        }
+        .titleSize {
+            font-size: 1.48em;
         }
     }
         
