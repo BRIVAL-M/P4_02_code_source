@@ -8,7 +8,7 @@
 }
 
 
-.form-group--adjust {
+.form-groupAdjust {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -25,7 +25,9 @@ label {
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
+a {
+  text-decoration: none !important;
+}
 /*input, select, textarea {
     border: solid 2px #F3976C !important;
     height: 30px;
@@ -57,7 +59,22 @@ textarea
 .headerLinks:hover{
     color: #F3976C;
 }
-
+.hnSize {
+  font-size: 30px !important;
+}
+.contactAdjust {
+  margin-top: 10px;
+  height: 100px;
+  text-align:center;
+}
+.colorIcons {
+  color: #F3976C;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+.MAPS {
+  width: 100%;
+}
 
 body {
     margin : 0;
@@ -475,8 +492,16 @@ body {
     overflow-x : hidden;
     position : relative;
     }
+    @media (max-width: 991px) {
+      .black-background {
+        width: 90%;
+    }
+    }
     
     @media (max-width: 767px) {
+      .MAPS {
+        margin-top: 20px;
+      }
     .page-container {
     overflow-x : hidden;
     position : relative;
@@ -484,6 +509,14 @@ body {
     h1, h2, h3, p {
     padding-left : 10px !important ;
     padding-right : 10px !important ;
+    }
+    .contactAdjust {
+      margin-top: 65px;
+      text-align: center;
+     }
+    .colorIcons {
+      margin-bottom: inherit;
+      
     }
     .navbar .nav {
     padding-top : 0;
@@ -541,6 +574,7 @@ body {
     padding-left : 0;
     padding-right : 0;
     }
+    
     }
     @media screen and (max-width:532px){
         blockquote {
@@ -549,9 +583,7 @@ body {
         h2 {
             font-size: x-large;
         }
-        .black-background {
-            width: 90%;
-        }
+       
         .titleSize {
             font-size: 1.48em;
         }
