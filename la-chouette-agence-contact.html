@@ -24,11 +24,12 @@
 	<script src="./js/jqBootstrapValidation.js"></script>-->
 	
 	<script src="https://kit.fontawesome.com/2b58de1911.js" crossorigin="anonymous"></script>
-	<script src="./js/jquery-2.1.0.js"></script>
+	<!--<script src="./js/jquery-2.1.0.js"></script>
 	<script src="./js/bootstrap.js"></script>
 	<script src="./js/blocs.js"></script>
-
-	<!--<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>-->
 	
 
@@ -124,7 +125,7 @@
 					<div class="col-sm-6"><!--TEST
 						<form id="form_1" class="form-groupAdjust" novalidate success-msg="Your message has been sent."
 							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">-->
-							<form method="post" action="include/form_1.php" id="form_1" novalidate></form>
+							<form method="post" action="includes/form_1.php" id="form_1" novalidate>
 							<div class="form-group form-groupAdjust">
 								<label for="name">
 									Nom
@@ -143,7 +144,7 @@
 									Comment nous avez-vous connu ?
 								</label>
 								<select name="info" id="info">
-									<option value="connaissance">Part le biais du projet 4 de la formation Openclassrooms</option>
+									<option value="connaissance">Par le biais du projet 4 de la formation Openclassrooms</option>
 									<option value="web" selected>En cherchant sur Internet</option>
 									<option value="réseaux sociaux">Sur nos réseaux sociaux</option>
 								</select>
@@ -156,7 +157,7 @@
 									></textarea><!--rows="4" cols="50" je l'ai mis dans le css-->
 							</div>
 							<input class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-								type="submit" value="Envoyer"/>
+								type="submit" name="submit" value="Envoyer"/>
 								
 							
 						</form>
@@ -231,6 +232,14 @@
 
 	</div>
 	<!-- Principal conteneur END -->
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script>
+
+	
+
 
 
 </body>

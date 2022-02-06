@@ -499,6 +499,11 @@ body {
     }
     
     @media (max-width: 767px) {
+   
+      .lightbox-caption{
+        text-align: center;
+     
+      }
       .MAPS {
         margin-top: 20px;
       }
@@ -588,5 +593,42 @@ body {
             font-size: 1.48em;
         }
     }
-        
-    
+    @media (max-width: 320px) {
+    .black-background {
+        width: 96%;
+      }
+      label {
+        font-size: medium;
+      }
+      .contactAdjust {
+        font-size: small;
+      }
+      .alert-warning {
+        font-size: small;
+      }
+      }
+      @media only screen and (max-height: 575.98px) and (orientation: landscape) {
+        .btn-atomic-tangerine {
+          margin-top: 15px;
+        }
+        .black-background {
+          width: 99%;
+        }
+       .mobileAdjust {
+        display: flex;
+        justify-content: center;
+       }
+       .modal-body {
+         padding: 5px;
+         height: 355px;
+       }
+       .img-responsive {
+         width: 60%;
+         display: unset;
+         height: 325px;
+       }
+       #lightbox-image {
+        margin-left: 160px;
+        width: 50%;
+       }
+      }

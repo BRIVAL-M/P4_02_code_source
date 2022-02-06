@@ -1,24 +1,17 @@
 <?php	
-	if(empty($_POST['name']) && strlen($_POST['name']) == 0 || empty($_POST['email']) && strlen($_POST['email']) == 0 || empty($_POST['input_504']) && strlen($_POST['input_504']) == 0 || empty($_POST['message']) && strlen($_POST['message']) == 0)
+	if(isset($_POST['submit']))		
 	{
-		return false;
-	}
-	
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$input_504 = $_POST['input_504'];
-	$message = $_POST['message'];
-	
-	$to = 'receiver@yoursite.com'; // Email submissions are sent to this email
+		if(isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['message']))
+		{
+			if(!empty($_POST['name']) AND !empty($_POST['email'])AND !empty($_POST['message']))
+			{
+				$name=htmlspecialchars($_POST['name']);
+				$email=htmlspecialchars($_POST['email']);
+				$message=htmlspecialchars($_POST['message']);
 
-	// Create email	
-	$email_subject = "Message from your website";
-	$email_body = "You have received a new message. \n\n".
-				  "Name: $name \nEmail: $email \nInput_504: $input_504 \nMessage: $message \n";
-	$headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=UTF-8\r\n";	
-	$headers .= "From: contact@yoursite.com\n";
-	$headers .= "Reply-To: $input_504";	
-	
-	mail($to,$email_subject,$email_body,$headers); // Post message
-	return true;			
+				echo " <h2>Bonjour <b> $name </b> ce n'est pas chouette !</br></br>Il semble que notre serveur rencontre des difficultés en ce moment.
+				</br></br>Mais ne vous inquiétez pas, nous vous contacterons prochainement à cette adresse</br></br> <b> $email </b></h2>"
+			}
+		}
+	}	
 ?>
